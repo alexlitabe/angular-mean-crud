@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="/home">Angular Crud</a>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li>
+                <mat-form-field appearance="outline">
+                    <mat-icon matPrefix class="icon">search</mat-icon>
+                    <input matInput  placeholder="search" type="text">
+                    <button mat-icon-button matSuffix class="icon">
+                      <mat-icon>close</mat-icon>
+                    </button>
+                  </mat-form-field>
+            </li>
+        </ul>
+    </div>
+  </mat-toolbar>
